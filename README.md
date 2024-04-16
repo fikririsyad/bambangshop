@@ -84,9 +84,9 @@ This is the place for you to write reflections:
 #### Reflection Publisher-2
 1. I think we need to separate it to adhere to Single Responsibility Principle, seeing that in MVC, Model has too many responsibilities. By separating it, Service will handle the business logic, Repository will handle data storage operations, and now Model will only be used as the structure of the data.
 1. I think the code will be very messy considering that Model will handle all data-related operations and it leads to code that is hard to read. Additionally, Model will hold too many responsibilities making it more complex and harder to maintain.
-1. I haven't explored much about Postman, but from the file that was given in this tutorial, I find it to be very useful because we can save API requests for testing our application and see if the responses are correct. It makes the process of checking our code functionality quite fast.
+1. I haven't explored much about Postman, but from the file that was given in this tutorial, I find it to be very useful because we can save API requests for testing our application and see if the responses are correct. It makes the process of checking our code functionality much faster.
 
 #### Reflection Publisher-3
 1. In this tutorial, we use Push model Observer Pattern where the publisher will push notifications to their subscriber when an update occurs.
-1. The advantage of Pull model is that it's more efficient and flexible because the subscribers will only get the information when they need it. The disadvantage of Pull model is it will increase the code complexity and overhead.
+1. The advantage of Pull model is that it's more efficient and flexible because the subscribers will only get the information only when they need it. The disadvantage of Pull model is it will increase the code complexity and overhead.
 1. If we didn't use multi-threading, the process of giving notifications to subscribers would be significantly slower considering that the publisher has to notify the subscribers one by one. Therefore, we can't give the notification simultaneously to all subscribers.
