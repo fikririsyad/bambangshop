@@ -77,6 +77,9 @@ This is the place for you to write reflections:
 ### Mandatory (Publisher) Reflections
 
 #### Reflection Publisher-1
+1. I think we don't need an interface, since we only have one type of Subscriber. For now, I think single model struct is enough.
+1. Based on my understanding, Vec is sufficient but DashMap is better for this case because we can make a key-value pair from id and url to make it more efficient.
+1. Based on my understanding, I think DashMap is still needed because it is thread-safe, so it can be accessed by multiple threads. We can complement it by implementing Singleton pattern to make sure that there's only one SUBSCRIBERS.
 
 #### Reflection Publisher-2
 
