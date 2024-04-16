@@ -82,5 +82,8 @@ This is the place for you to write reflections:
 1. Based on my understanding, I think DashMap is still needed because it is thread-safe, so it can be accessed by multiple threads. We can complement it by implementing Singleton pattern to make sure that there's only one SUBSCRIBERS.
 
 #### Reflection Publisher-2
+1. I think we need to separate it to adhere to Single Responsibility Principle, seeing that in MVC, Model has too many responsibilities. By separating it, Service will handle the business logic, Repository will handle data storage operations, and now Model will only be used as the structure of the data.
+1. I think the code will be very messy considering that Model will handle all data-related operations and it leads to code that is hard to read. Additionally, Model will hold too many responsibilities making it more complex and harder to maintain.
+1. I haven't explored much about Postman, but from the file that was given in this tutorial, I find it to be very useful because we can save API requests for testing our application and see if the responses are correct. It makes the process of checking our code functionality quite fast.
 
 #### Reflection Publisher-3
